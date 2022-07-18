@@ -10,4 +10,3 @@ urlpatterns = [
     path('task-delete/<int:pk>/', DeleteView.as_view(), name = 'task-delete'),
 ]
 
-#.asview used as URL resolver can't use class inside of it

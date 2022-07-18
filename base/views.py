@@ -23,15 +23,16 @@ class TaskDetail(DetailView):
 class TaskCreate(CreateView):
     model = Task
     # easier way to list out than having to create a list of all fields
-    fields = '__all__'
+    fields = ['title', 'description', 'complete']
     # if everything goes well, send user back to list
     success_url = reverse_lazy('tasks')
+    template_name = 'base/task_create.html'
 
 # This class is used as 
 class TaskUpdate(UpdateView):
     model = Task
     # easier way to list out than having to create a list of all fields
-    fields = '__all__'
+    fields = ['title', 'description', 'complete']
     # if everything goes well, send user back to list
     success_url = reverse_lazy('tasks')
 

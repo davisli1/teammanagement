@@ -12,12 +12,8 @@
     <form method = "POST" action ="">
         {%csrf_token%}
         {{form.as_p}}
-        <a class = "button" href="{% url 'task-delete' task.id %}">Delete</a>
         <input class = "button" type = "submit" value = "Submit">
-        
     </form>
 </div>
 
 {% endblock content%}
-
-
