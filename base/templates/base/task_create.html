@@ -1,12 +1,16 @@
 {% extends 'base/main.html' %}
 {% block content %}
 
-
-<div class = "header-bar">
-    <h3>Task Form</h3>
+<div class = "back-header-bar">
     <a href = "{% url 'tasks' %}">&#8592; Back</a>
 </div>
 
+<div class = "header-bar">
+    <div>
+        <h1>Add a team member</h1>
+        <h3 style = "margin:0">Set email, location and role.</h3>
+    </div>
+</div>
 
 <div class="card-body">
     <form method = "POST" action ="">
