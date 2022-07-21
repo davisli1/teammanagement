@@ -18,8 +18,11 @@
     {% for task in tasks %}
     <div class = "task-wrapper">
         <div class = "task-title">
+            {% if task.admin %}
             <div class = "task-complete-icon"></div>
-            <a href = "{% url 'task-update' task.id%}">{{task.f_name}} {{task.l_name}}</a>
+            <b><a href = "{% url 'task-update' task.id%}">{{task.first_name}} {{task.last_name}} (Admin)</a></b> {%else%}
+            <div class = "task-complete-icon"></div>
+            <b><a href = "{% url 'task-update' task.id%}">{{task.first_name}} {{task.last_name}}</a></b> {%endif%}
         </div>
         <div class = "task-title-2">
             <a href = "{% url 'task-update' task.id%}">{{task.number}}</a>
