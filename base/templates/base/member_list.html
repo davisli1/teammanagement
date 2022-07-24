@@ -1,0 +1,14 @@
+<h1> Team Members</h1>
+
+<table>
+    <tr>
+        <th>Item</th>
+    </tr>
+    {% for Member in members %}
+    <tr>
+        <td>{{Member.first_name}}</td>
+    </tr>
+    {% empty %}
+        <h3></h3>
+    {% endfor %}
+</table>

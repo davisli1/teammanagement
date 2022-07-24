@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views.generic.list import ListView
 
-def teamList(request):
-    return HttpResponse('Team Management')
+
+from .models import Member
+
+class MemberList(ListView):
+    model = Member
+    context_object_name = 'members'
 
