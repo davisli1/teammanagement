@@ -16,3 +16,8 @@ class MemberCreate(CreateView):
     success_url = reverse_lazy('members')
     template_name = 'base/member_create.html'
 
+class MemberUpdate(UpdateView):
+    model = Member
+    fields = ['first_name', 'last_name', 'email', 'phone_number', 'admin']
+    success_url = reverse_lazy('members')
+    template_name = 'base/member_update.html'
