@@ -1,5 +1,4 @@
 <a id="add-link" href = "{% url 'member-create'%}">&#x2b;</a>
-
 <h1> Team Members</h1>
 
 <table>
@@ -8,7 +7,9 @@
     </tr>
     {% for Member in members %}
     <tr>
-        <td>{{Member.first_name}}</td>
+        <td>
+            <a href = "{% url 'member-update' Member.id%}">{{Member.first_name}} {{Member.last_name}}</a>
+        </td>
     </tr>
     {% empty %}
         <h3></h3>
