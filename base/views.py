@@ -21,3 +21,8 @@ class MemberUpdate(UpdateView):
     fields = ['first_name', 'last_name', 'email', 'phone_number', 'admin']
     success_url = reverse_lazy('members')
     template_name = 'base/member_update.html'
+
+class MemberDelete(DeleteView):
+    model = Member
+    context_object_name = 'member'
+    success_url = reverse_lazy('members')
