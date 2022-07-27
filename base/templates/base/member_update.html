@@ -1,12 +1,23 @@
+{% extends 'base/main.html' %}
+{% block content %}
 
-<h1>Edit team member</h1>
-<h3 style = "margin:0">Edit email, location and role.</h3>
+<div class = "header-bar">
+    <div>
+        <h1>Edit team member</h1>
+        <h3 style = "margin:0">Edit email, location and role.</h3>
+    </div>
+</div>
+<div class= "back-header-bar">
+    <h3>Info</h3>
+</div>
 
-<h3>Info</h3>
+<div class="card-body">
+    <form method = "POST" action ="">
+        {%csrf_token%}
+        {{form.as_p}}
+        <a class = "delete-button" href="{% url 'member-delete' member.id %}">Delete</a>
+        <input class = "button" type = "submit" value = "Submit">
+    </form>
+</div>
 
-<form method = "POST" action ="">
-{%csrf_token%}
-{{form.as_p}}
-<a class = "delete-button" href="{% url 'member-delete' member.id %}">Delete</a>
-<input class = "button" type = "submit" value = "Submit">
-
+{% endblock content%}
