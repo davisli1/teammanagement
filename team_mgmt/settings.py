@@ -20,6 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# If this application was deployed in production, the secret key would be hidden and be consumed in as an environment variable. 
+# To be able to build this application on your local set up for this Instawork take-home assignment, the secret key is left public. 
 SECRET_KEY = 'django-insecure-*@qv!re%6h$ol&c=^mz&jrq&rdk*pa!r03#o8fby#z+&@h+gkp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
