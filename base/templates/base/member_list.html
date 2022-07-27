@@ -1,17 +1,39 @@
-<a id="add-link" href = "{% url 'member-create'%}">&#x2b;</a>
-<h1> Team Members</h1>
+{% extends 'base/main.html' %}
+{% block content %}
 
-<table>
-    <tr>
-        <th>Item</th>
-    </tr>
+<div id = "add-wrapper">
+    <a id="add-link" href = "{% url 'member-create'%}">&#x2b;</a>
+</div>
+
+<div class="header-bar">
+    <div>
+        <h1> Team Members</h1>
+        <h3 style = "margin:0">You have {{members.count}} Employee{{  members.count|pluralize:"s"  }}</h3>
+    </div>
+</div>
+
+<div id = "memberlist" class="member-items-wrapper">
     {% for Member in members %}
-    <tr>
-        <td>
-            <a href = "{% url 'member-update' Member.id%}">{{Member.first_name}} {{Member.last_name}}</a>
-        </td>
-    </tr>
-    {% empty %}
-        <h3></h3>
+    <div class = "member-wrapper">
+        <div class = "member-title">
+            {% if Member.admin %}
+            <div class = "member-icon"></div>
+            <b><a href = "{% url 'member-update' Member.id%}">{{Member.first_name}} {{Member.last_name}} (Admin)</a></b> {%else%}
+            <div class = "member-icon"></div>
+            <b><a href = "{% url 'member-update' Member.id%}">{{Member.first_name}} {{Member.last_name}}</a></b> {%endif%}
+        </div>
+        <div class = "member-title-2">
+            <a href = "{% url 'member-update' Member.id%}">{{Member.phone_number}}</a>
+        </div>
+        <div class = "member-title-2">
+            <a href = "{% url 'member-update' Member.id%}">{{Member.email}}</a>
+        </div>
+
+
+    </div>
     {% endfor %}
-</table>
+</div>
+
+
+
+{% endblock content%}
