@@ -38,7 +38,7 @@ python -m pip install --upgrade pip
 ```
 python -m pip install django
 ```
-6. Run this line of code to set up demo at: http://127.0.0.1:8000/
+6. Run this line of code to set up demo at: http://127.0.0.1:5000/
 ```
 python manage.py runserver 5000
 ```
