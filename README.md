@@ -42,7 +42,7 @@ python -m pip install django
 ```
 python manage.py runserver 5000
 ```
-8. Enjoy!
+7. Enjoy!
 
 ### License
 Distributed under the MIT License.
