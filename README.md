@@ -18,6 +18,12 @@ https://user-images.githubusercontent.com/74220806/181405328-9fed535f-d7d9-416f-
 * Django: Backend Python framework 
 
 ### How to run app on VSCode:
+#### Pre-requisites:
+* Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank">Python Extention</a>
+* Install a version of Python 3
+* On Windows, make sure the location of your Python interpreter is included in your PATH environment variable.
+
+#### Steps:
 1. Close repository from Github: https://github.com/davisli1/teammanagement.git
 2. Open terminal and use following command to create virtual environment named .venv to run Django 
 ```
@@ -38,11 +44,17 @@ python -m pip install --upgrade pip
 ```
 python -m pip install django
 ```
-6. Run this line of code to set up demo at: http://127.0.0.1:5000/
+6. Create an empty development database by running the following command:
+```
+python manage.py migrate
+```
+7. Run this line of code to set up demo at: http://127.0.0.1:5000/
 ```
 python manage.py runserver 5000
 ```
-7. Enjoy!
+8. Enjoy!
+
+If you run into other further problems, follow this more <a href="https://code.visualstudio.com/docs/python/tutorial-django#:~:text=Open%20the%20project%20folder%20in,the%20File%20%3E%20Open%20Folder%20command.&text=Run%20Terminal%3A%20Create%20New%20Terminal,by%20running%20its%20activation%20script." target="_blank">detailed explanation</a>! 
 
 ### Possible Extensions
 * Google authentication: where those deemed admin can actually have the power to delete members
