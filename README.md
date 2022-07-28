@@ -15,8 +15,7 @@ https://user-images.githubusercontent.com/74220806/181405328-9fed535f-d7d9-416f-
 * Users should be able to edit employees
 
 ### Built with:
-* Django: Backend framework to develop database
-* HTML: For frontend
+* Django: Backend Python framework 
 
 ### How to run app on VSCode:
 1. Close repository from Github: gh repo clone davisli1/teammanagement
@@ -44,3 +43,6 @@ python -m pip install django
 python manage.py runserver 5000
 ```
 8. Enjoy!
+
+### License
+Distributed under the MIT License.
