@@ -18,7 +18,7 @@ https://user-images.githubusercontent.com/74220806/181405328-9fed535f-d7d9-416f-
 * Django: Backend Python framework 
 
 ### How to run app on VSCode:
-1. Close repository from Github: gh repo clone davisli1/teammanagement
+1. Close repository from Github: https://github.com/davisli1/teammanagement.git
 2. Open terminal and use following command to create virtual environment named .venv to run Django 
 ```
 py -3 -m venv .venv
