@@ -44,5 +44,9 @@ python manage.py runserver 5000
 ```
 7. Enjoy!
 
+### Possible Extensions
+* Google authentication: where those deemed admin can actually have the power to delete members
+* Unified Search: where you can search for employees on the team
+
 ### License
 Distributed under the MIT License.
