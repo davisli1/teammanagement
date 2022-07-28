@@ -26,7 +26,12 @@ py -3 -m venv .venv
 .venv\scripts\activate
 ```
 3. In VS Code, open the Command Palette (View > Command Palette or (Ctrl+Shift+P)). Then select the Python: Select Interpreter command:
+![command-palette](https://user-images.githubusercontent.com/74220806/181405631-6d41a13a-717b-445a-a976-a27637d157dd.png)
+
 4. From the list, select the virtual environment in your project folder that starts with ./.venv or .\.venv:
+![select-virtual-environment](https://user-images.githubusercontent.com/74220806/181405644-e08afd03-f595-44be-a44d-9be8eec2db59.png)
+![environment-in-status-bar](https://user-images.githubusercontent.com/74220806/181405692-4b8e255f-0ca0-44ec-b501-eb2f742981a4.png)
+
 5. Install new version of pip and django
 ```
 python -m pip install --upgrade pip
