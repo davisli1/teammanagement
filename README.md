@@ -4,6 +4,11 @@
 A simple team-member management application built using Django that allows the user to view, edit, add, and delete team members. View video demo below:
 Built for the interview process for Instawork, approximate time taken = 2 days
 
+![Video_thumbnail](https://user-images.githubusercontent.com/74220806/181405393-094ba0e6-a0b5-4da3-8e93-dfe9b1161b35.png)
+
+### Project Demo
+https://user-images.githubusercontent.com/74220806/181405328-9fed535f-d7d9-416f-a0f4-2454dfc55b6d.mp4
+
 ### Features
 * Users should be able to view all employees with total count at top
 * Users should be able to add new employee with information fields
@@ -11,6 +16,7 @@ Built for the interview process for Instawork, approximate time taken = 2 days
 
 ### Built with:
 * Django: Backend framework to develop database
+* HTML: For frontend
 
 ### How to run app on VSCode:
 1. Close repository from Github: gh repo clone davisli1/teammanagement
