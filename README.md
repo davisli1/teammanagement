@@ -2,7 +2,6 @@
 
 ### About the Project:
 A simple team-member management application built using Django that allows the user to view, edit, add, and delete team members. View video demo below:
-Built for the interview process for Instawork, approximate time taken = 2 days
 
 ![Video_thumbnail](https://user-images.githubusercontent.com/74220806/181405393-094ba0e6-a0b5-4da3-8e93-dfe9b1161b35.png)
 
